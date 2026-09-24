@@ -1,0 +1,499 @@
+/* Reset & Pengaturan Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f172a;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #0064fa;
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-login {
+    color: #475569;
+    padding: 8px 12px;
+}
+
+.btn-register {
+    background: #0064fa;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+/* HERO / HEADER */
+.hero-simple {
+    max-width: 1200px;
+    margin: 30px auto 20px auto;
+    padding: 0 24px;
+}
+
+.hero-simple h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.hero-simple p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* CONTAINER UTAMA */
+.hotel-list-container {
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 0 24px;
+}
+
+/* FILTER PENCARIAN */
+.filter-container {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 14px 20px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.filter-container select {
+    flex: 1;
+    max-width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+}
+
+.filter-container button {
+    background: #0064fa;
+    color: white;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter-container button:hover {
+    background: #0053cc;
+}
+
+/* KARTU HOTEL */
+.hotel-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 16px;
+    transition: all 0.2s;
+}
+
+.hotel-card:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+/* Bagian Gambar Hotel */
+.hotel-images {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.img-main img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.img-thumbs img {
+    width: 65px;
+    height: 62px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Informasi Hotel */
+.hotel-info {
+    flex: 1;
+}
+
+.hotel-badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 11px;
+}
+
+.badge-type {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.badge-star {
+    font-size: 10px;
+}
+
+.badge-partner {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.hotel-info h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.hotel-address {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+.hotel-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f8fafc;
+    border: 1px solid #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.hotel-rating .score {
+    background: #2563eb;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.hotel-rating .text {
+    font-size: 12px;
+    color: #334151;
+}
+
+/* Aksi & Harga */
+.hotel-action {
+    text-align: right;
+    min-width: 180px;
+    border-left: 1px solid #f1f5f9;
+    padding-left: 24px;
+}
+
+.price-box {
+    margin-bottom: 12px;
+}
+
+.price-box .label {
+    display: block;
+    font-size: 10px;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.price-box .old-price {
+    font-size: 12px;
+    color: #94a3b8;
+    text-decoration: line-through;
+    display: block;
+}
+
+.price-box .current-price {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ea580c;
+    display: block;
+}
+
+.price-box .tax {
+    font-size: 10px;
+    color: #64748b;
+}
+
+.btn-choose-room {
+    background: #ea580c;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.btn-choose-room:hover {
+    background: #c2410c;
+}
+
+/* HALAMAN DETAIL HOTEL */
+.detail-page-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.hotel-detail-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr;
+    gap: 30px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .hotel-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Galeri Detail */
+.gallery-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.gallery-main img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallery-thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.gallery-thumbs img {
+    width: 100%;
+    height: 154px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Card Konten & Booking */
+.content-card, .booking-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Form Pemesanan */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+    color: #1e293b;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #0064fa;
+    box-shadow: 0 0 0 3px rgba(0, 100, 250, 0.1);
+}
+
+.btn-submit-booking {
+    width: 100%;
+    background: #f97316;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.btn-submit-booking:hover {
+    background: #ea580c;
+}
+
+/* Styling Halaman Login & Register */
+.auth-body {
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.auth-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.auth-header .logo {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.auth-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.auth-header p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.auth-footer a {
+    color: #0064fa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.alert {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.alert-danger {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+.alert-success {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
